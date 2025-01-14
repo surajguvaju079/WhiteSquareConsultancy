@@ -1,191 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/nzstyle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japan</title>
-  <link rel="stylesheet" href="../style/style.css" />
-  <link rel="stylesheet" href="../style/nzstyle.css" />
-</head>
-
-<body>
-
-  <!-- Nav Section -->
-  <header>
-    <div class="top-header">
-      <!-- <div class="logo">
+  <body>
+    <!-- Nav Section -->
+    <header>
+      <div class="top-header">
+        <!-- <div class="logo">
         <img src="../../images/logo.png" alt="SquareLearn Logo" />
       </div> -->
-      <h4>WSC Logo</h4>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <h4>WSC Logo</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="/WhiteSquareConsultancy/src/pages/index.html">Home</a>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section -->
+    <section
+      id="hero"
+      class="hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('../../images/JPImages/3.jpg');
+      "
+    >
+      <div class="hero-content">
+        <h1>A Blend of Tradition and Innovation</h1>
+        <p>
+          Your trusted partner in education, offering guidance and support to
+          students worldwide.
+        </p>
+        <a href="#contact" class="btn">Book a Free Consultation</a>
+      </div>
+    </section>
+
+    <div class="nzheader">
+      <div class="sec1">
+        <section id="about" class="introduction">
+          <h2>Why study in the Japan?</h2>
+          <div class="service-cards div1">
+            <div class="card c1">
+              Cutting-edge technology and research facilities.
+            </div>
+            <div class="card c1">
+              Opportunities to learn Japanese culture and language.
+            </div>
+            <div class="card c1">
+              Scholarships and government support for international students.
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="sec2">
+        <section id="about" class="introduction">
+          <h2>Our Services for the Japan</h2>
+          <div class="service-cards div1">
+            <div class="card c1">
+              Guidance on applying to universities and language schools.
+            </div>
+            <div class="card c1">
+              Information on MEXT scholarships and other funding options.
+            </div>
+            <div class="card c1">
+              Assistance with student visa applications.
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="/WhiteSquareConsultancy/src/pages/index.html">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Header Section -->
-  <section id="hero" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/JPImages/3.jpg')">
-    <div class="hero-content">
-      <h1>A Blend of Tradition and Innovation</h1>
+    <div class="nzcenter">
+      <div class="sec1">
+        <section id="about" class="introduction">
+          <h2>Popular Programs:</h2>
+          <div class="service-cards div2">
+            <div
+              class="card"
+              id="p0"
+              data-value="1"
+              onclick="switchCard(this.dataset.value)"
+            >
+              Robotics and AI
+            </div>
+            <div
+              class="card"
+              id="p1"
+              data-value="2"
+              onclick="switchCard(this.dataset.value)"
+            >
+              International Business
+            </div>
+            <div
+              class="card"
+              id="p2"
+              data-value="3"
+              onclick="switchCard(this.dataset.value)"
+            >
+              Japanese Language and Culture
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="sec2">
+        <div class="imgPlusDesc div2" id="div2-0">
+          <div class="image">
+            <img src="../../images/JPImages/3.jpg" alt="Newzealand" />
+          </div>
+          <div class="description">
+            <h3>Robotics and AI</h3>
+            Japan stands at the forefront of robotics and AI innovation,
+            blending cutting-edge technology with a deep-rooted passion for
+            precision. Renowned for humanoid robots, industrial automation, and
+            AI-driven solutions, Japan shapes industries globally. From
+            futuristic healthcare robots to smart cities, Japan's advancements
+            highlight its commitment to creating a harmonious, tech-enhanced
+            society.
+          </div>
+        </div>
+        <div class="imgPlusDesc div2" id="div2-1">
+          <div class="image">
+            <img src="../../images/JPImages/tokyotower.jpg" alt="Newzealand" />
+          </div>
+          <div class="description">
+            <h3>International Business</h3>
+            Japan is a global hub for international business, renowned for its
+            innovation, efficiency, and commitment to quality. With its strong
+            economy, advanced technology, and strategic location in Asia, Japan
+            fosters global trade and partnerships. Its unique business culture,
+            emphasizing long-term relationships and meticulous planning,
+            attracts investors and businesses worldwide.
+          </div>
+        </div>
+        <div class="imgPlusDesc div2" id="div2-2">
+          <div class="image">
+            <img src="../../images/JPImages/5.jpg" alt="Newzealand" />
+          </div>
+          <div class="description">
+            <h3>Japanese Language and Culture</h3>
+            The Japanese language and culture are rich with tradition,
+            innovation, and deep symbolism. Rooted in centuries-old customs,
+            Japan's culture embraces harmony, respect, and meticulous attention
+            to detail. From the art of tea ceremonies to anime and modern pop
+            culture, Japan seamlessly blends ancient traditions with
+            contemporary trends, offering a unique and inspiring cultural
+            experience.
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="introduction">
+      <h2>Universities</h2>
+      <div class="service-cards div1 divUniversitypic">
+        <div class="card box1">
+          <img src="../../images/JPImages/JPNUniversity/jpnTokyo.jpg" />
+          <h4>Japan Tokyo International School</h4>
+          <p>
+            Enhance your Japanese proficiency in the heart of Tokyo with
+            programs focused on language mastery and cultural immersion,
+            preparing students for academic and professional success...
+          </p>
+        </div>
+        <div class="card box1">
+          <img
+            src="../../images/JPImages/JPNUniversity/Ashiya_University_Hyogo_Japan_2008.jpg"
+          />
+          <h4>Ashiya University</h4>
+          <p>
+            Innovative programs blending liberal arts and professional studies
+            in a vibrant environment near Kobe, fostering creativity and global
+            perspectives for lifelong success...
+          </p>
+        </div>
+        <div class="card box1">
+          <img src="../../images/JPImages/JPNUniversity/jsl.jpg" />
+          <h4>JSL Nippon Academy</h4>
+          <p>
+            Personalized Japanese language education across major cities,
+            equipping students with essential skills for academic achievements
+            and career opportunities in Japan...
+          </p>
+        </div>
+        <div class="card box1">
+          <img src="../../images/JPImages/JPNUniversity/selukuGakuin.jpg" />
+          <h4>Saelu Gakuin</h4>
+          <p>
+            Intensive language programs designed to help international students
+            excel in Japanese universities or workplaces, emphasizing practical
+            communication and cultural understanding...
+          </p>
+        </div>
+        <div class="card box1">
+          <img src="../../images/JPImages/JPNUniversity/sakura.jpg" />
+          <h4>Sakura Japanese Language Academy</h4>
+          <p>
+            Comprehensive Japanese courses paired with cultural experiences,
+            offering a dynamic learning environment for students passionate
+            about exploring Japan's traditions and modern life...
+          </p>
+        </div>
+        <div class="card box1">
+          <img src="../../images/JPImages/JPNUniversity/stepworld.jpg" />
+          <h4>Step World Japanese</h4>
+          <p>
+            Flexible, student-focused language programs catering to all levels,
+            providing strong foundations for academic, professional, and
+            everyday success in Japan...
+          </p>
+        </div>
+        <div class="card box1">
+          <img src="../../images/JPImages/JPNUniversity/kyushu-lang.jpg" />
+          <h4>Kyushu Foreign Language Academy</h4>
+          <p>
+            Specialized language and cultural programs in Kyushu, preparing
+            students for higher education and professional growth with practical
+            skills and immersive experiences...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
       <p>
-        Your trusted partner in education, offering guidance and support to
-        students worldwide.
+        Email: support@squarelearn.com | Phone: +977 9843310061, 9861885316,
+        9841951005
       </p>
-      <a href="#contact" class="btn">Book a Free Consultation</a>
-    </div>
-  </section>
-
-  <div class="nzheader">
-    <div class="sec1">
-      <section id="about" class="introduction">
-        <h2>Why study in the Japan?</h2>
-        <div class="service-cards div1">
-          <div class="card c1">Cutting-edge technology and research facilities.</div>
-          <div class="card c1">Opportunities to learn Japanese culture and language.</div>
-          <div class="card c1">
-            Scholarships and government support for international students.
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="sec2">
-      <section id="about" class="introduction">
-        <h2>Our Services for the Japan</h2>
-        <div class="service-cards div1">
-          <div class="card c1">Guidance on applying to universities and language schools.</div>
-          <div class="card c1">
-            Information on MEXT scholarships and other funding options.
-          </div>
-          <div class="card c1">Assistance with student visa applications.</div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <div class="nzcenter">
-    <div class="sec1">
-      <section id="about" class="introduction">
-        <h2>Popular Programs:</h2>
-        <div class="service-cards div2">
-          <div class="card" id="p0" data-value="1" onclick="switchCard(this.dataset.value)">Robotics and AI</div>
-          <div class="card" id="p1" data-value="2" onclick="switchCard(this.dataset.value)">International Business</div>
-          <div class="card" id="p2" data-value="3" onclick="switchCard(this.dataset.value)">Japanese Language and
-            Culture</div>
-        </div>
-      </section>
-    </div>
-    <div class="sec2">
-      <div class="imgPlusDesc div2" id="div2-0">
-        <div class="image">
-          <img src="../../images/JPImages/3.jpg" alt="Newzealand">
-        </div>
-        <div class="description">
-          <h3>Robotics and AI</h3>
-          Japan stands at the forefront of robotics and AI innovation, blending cutting-edge technology with a deep-rooted passion for precision. Renowned for humanoid robots, industrial automation, and AI-driven solutions, Japan shapes industries globally. From futuristic healthcare robots to smart cities, Japan's advancements highlight its commitment to creating a harmonious, tech-enhanced society.
-        </div>
-      </div>
-      <div class="imgPlusDesc div2" id="div2-1">
-        <div class="image">
-          <img src="../../images/JPImages/tokyotower.jpg" alt="Newzealand">
-        </div>
-        <div class="description">
-          <h3>International Business</h3>
-          Japan is a global hub for international business, renowned for its innovation, efficiency, and commitment to quality. With its strong economy, advanced technology, and strategic location in Asia, Japan fosters global trade and partnerships. Its unique business culture, emphasizing long-term relationships and meticulous planning, attracts investors and businesses worldwide.
-        </div>
-      </div>
-      <div class="imgPlusDesc div2" id="div2-2">
-        <div class="image">
-          <img src="../../images/JPImages/5.jpg" alt="Newzealand">
-        </div>
-        <div class="description">
-          <h3>Japanese Language and Culture</h3>
-          The Japanese language and culture are rich with tradition, innovation, and deep symbolism. Rooted in centuries-old customs, Japan's culture embraces harmony, respect, and meticulous attention to detail. From the art of tea ceremonies to anime and modern pop culture, Japan seamlessly blends ancient traditions with contemporary trends, offering a unique and inspiring cultural experience.
-        </div>
-      </div>
-    </div>
-  </div>
-  <section id="about" class="introduction">
-    <h2>Universities</h2>
-    <div class="service-cards div1 divUniversitypic">
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/jpnTokyo.jpg">
-        <h4>Japan Tokyo International School</h4>
-        <p>Enhance your Japanese proficiency in the heart of Tokyo with programs focused on language mastery and
-          cultural immersion, preparing students for academic and professional success...</p>
-      </div>
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/Ashiya_University_Hyogo_Japan_2008.jpg">
-        <h4>Ashiya University</h4>
-        <p>Innovative programs blending liberal arts and professional studies in a vibrant environment near Kobe,
-          fostering creativity and global perspectives for lifelong success...</p>
-      </div>
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/jsl.jpg">
-        <h4>JSL Nippon Academy</h4>
-        <p>Personalized Japanese language education across major cities, equipping students with essential skills for
-          academic achievements and career opportunities in Japan...</p>
-      </div>
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/selukuGakuin.jpg">
-        <h4>Saelu Gakuin</h4>
-        <p>Intensive language programs designed to help international students excel in Japanese universities or
-          workplaces, emphasizing practical communication and cultural understanding...</p>
-      </div>
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/sakura.jpg">
-        <h4>Sakura Japanese Language Academy</h4>
-        <p>Comprehensive Japanese courses paired with cultural experiences, offering a dynamic learning environment for
-          students passionate about exploring Japan's traditions and modern life...</p>
-      </div>
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/stepworld.jpg">
-        <h4>Step World Japanese</h4>
-        <p>Flexible, student-focused language programs catering to all levels, providing strong foundations for
-          academic, professional, and everyday success in Japan...</p>
-      </div>
-      <div class="card box1">
-        <img src="../../images/JPImages/JPNUniversity/kyushu-lang.jpg">
-        <h4>Kyushu Foreign Language Academy</h4>
-        <p>Specialized language and cultural programs in Kyushu, preparing students for higher education and
-          professional growth with practical skills and immersive experiences...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>
-      Email: support@squarelearn.com | Phone: +977 9843310061, 9861885316,
-      9841951005
-    </p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>
-      &copy; 2024 SquareLearn Educational Consultancy | All Rights Reserved
-    </p>
-  </footer>
-  <script src="../js/index.js"></script>
-</body>
-
+    </footer>
+    <script src="../js/copyright.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
 </html>
