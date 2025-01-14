@@ -13,9 +13,10 @@
   <!-- Nav Section -->
   <header>
     <div class="top-header">
-      <div class="logo">
+      <!-- <div class="logo">
         <img src="../../images/logo.png" alt="SquareLearn Logo" />
-      </div>
+      </div> -->
+      <h4>WSC Logo</h4>
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -25,7 +26,7 @@
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
+        <li><a href="/WhiteSquareConsultancy/src/pages/index.html">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#destinations">Destinations</a></li>
@@ -36,7 +37,7 @@
   </header>
 
   <!-- Heder section -->
-  <section id="hero" class="hero" style="background-image: url('../../images/nz.jpg')">
+  <section id="hero" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/nz.jpg')">
     <div class="hero-content">
       <h1>Study in the land of Kiwis</h1>
       <p>
@@ -74,8 +75,9 @@
       <section id="about" class="introduction">
         <h2>Popular Programs:</h2>
         <div class="service-cards div2">
-          <div class="card" id="p0"  data-value="1" onclick="switchCard(this.dataset.value)">Environmental Science</div>
-          <div class="card" id="p1" data-value="2" onclick="switchCard(this.dataset.value)">Hospitality and Tourism Management</div>
+          <div class="card" id="p0" data-value="1" onclick="switchCard(this.dataset.value)">Environmental Science</div>
+          <div class="card" id="p1" data-value="2" onclick="switchCard(this.dataset.value)">Hospitality and Tourism
+            Management</div>
           <div class="card" id="p2" data-value="3" onclick="switchCard(this.dataset.value)">Information Technology</div>
         </div>
       </section>
@@ -195,4 +197,5 @@
   </footer>
   <script src="../js/index.js"></script>
 </body>
+
 </html>
