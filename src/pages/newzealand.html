@@ -1,68 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>USA</title>
-    <link rel="stylesheet" href="../style/style.css" />
-  </head>
-  <body>
-    <section
-      id="hero"
-      class="hero"
-      style="background-image: url('../../images/newzealand.jpg')"
-    >
-      <div class="hero-content">
-        <h1>Study in the land of Kiwis</h1>
-        <p>
-          Your trusted partner in education, offering guidance and support to
-          students worldwide.
-        </p>
-        <a href="#contact" class="btn">Book a Free Consultation</a>
-      </div>
-    </section>
 
-    <section id="about" class="introduction">
-      <h2>Why study in the Newzealand?</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>
-          1. Globally recognized qualifications and affordable tuition fees.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newzealand</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/nzstyle.css" />
+</head>
+
+<body>
+  <!-- Nav Section -->
+  <header>
+    <div class="top-header">
+      <!-- <div class="logo">
+        <img src="../../images/logo.png" alt="SquareLearn Logo" />
+      </div> -->
+      <h4>WSC Logo</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/WhiteSquareConsultancy/src/pages/index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Heder section -->
+  <section id="hero" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/nz.jpg')">
+    <div class="hero-content">
+      <h1>Study in the land of Kiwis</h1>
+      <p>
+        Your trusted partner in education, offering guidance and support to
+        students worldwide.
+      </p>
+      <a href="#contact" class="btn">Book a Free Consultation</a>
+    </div>
+  </section>
+  <div class="nzheader">
+    <div class="sec1">
+      <section id="about" class="introduction">
+        <h2>Why study in the Newzealand?</h2>
+        <div class="service-cards div1">
+          <div class="card c1">Globally recognized qualifications and affordable tuition fees.</div>
+          <div class="card c1">Safe and welcoming environment.</div>
+          <div class="card c1">Post-study work opportunities and pathways to residency.</div>
         </div>
-        <div>2. Safe and welcoming environment.</div>
-        <div>3. Post-study work opportunities and pathways to residency.</div>
-      </div>
-    </section>
-    <section id="about" class="introduction">
-      <h2>Our Services for the New Zealand</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>
-          1. Support for applying to top institutions like the University of
-          Auckland and University of Otago.
+      </section>
+    </div>
+    <div class="sec2">
+      <section id="about" class="introduction">
+        <h2>Our Services for the New Zealand</h2>
+        <div class="service-cards div1">
+          <div class="card c2">Support for applying to top institutions like the University of Auckland and University
+            of Otago.</div>
+          <div class="card c2">Visa and work permit guidance.</div>
+          <div class="card c2">Information on scholarships and student life.</div>
         </div>
-        <div>2. Visa and work permit guidance.</div>
-        <div>3. Information on scholarships and student life.</div>
+      </section>
+    </div>
+  </div>
+  <div class="nzcenter">
+    <div class="sec1">
+      <section id="about" class="introduction">
+        <h2>Popular Programs:</h2>
+        <div class="service-cards div2">
+          <div class="card" id="p0" data-value="1" onclick="switchCard(this.dataset.value)">Environmental Science</div>
+          <div class="card" id="p1" data-value="2" onclick="switchCard(this.dataset.value)">Hospitality and Tourism
+            Management</div>
+          <div class="card" id="p2" data-value="3" onclick="switchCard(this.dataset.value)">Information Technology</div>
+        </div>
+      </section>
+    </div>
+    <div class="sec2">
+      <div class="imgPlusDesc div2" id="div2-0">
+        <div class="image">
+          <img src="../../images/newzealand.jpg" alt="Newzealand">
+        </div>
+        <div class="description">
+          <h3>Environmental Science</h3>
+          This program focuses on understanding and addressing environmental challenges through scientific research
+          and
+          practical solutions. Students explore topics like ecology, climate change, pollution, and sustainable
+          development, preparing for careers in environmental management, conservation, or policy-making.
+        </div>
       </div>
-    </section>
-    <section id="about" class="introduction">
-      <h2>Popular Programs:</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>1. Environmental Science</div>
-        <div>2. Hospitality and Tourism Management</div>
-        <div>3. Information Technology</div>
+      <div class="imgPlusDesc div2" id="div2-1">
+        <div class="image">
+          <img src="../../images/nz.jpg" alt="Newzealand">
+        </div>
+        <div class="description">
+          <h3>Hospitality and Tourism Management</h3>
+          This program emphasizes the skills and knowledge needed to thrive in the global hospitality and tourism
+          industries. Students explore topics such as hotel management, event planning, travel operations, and customer
+          service, preparing for careers in hotels, resorts, event management, and tourism enterprises.
+        </div>
       </div>
-    </section>
-    <section id="about" class="introduction">
-      <h2>Universities</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>1. UC International College</div>
-        <div>2. Aspire2 International, Aspire2 Education</div>
-        <div>3. Auckland University of Technology</div>
-        <div>3. The University of Auckland</div>
-        <div>3. Victoria University of Wellington</div>
-        <div>3. SAE Institute Auckland</div>
-        <div>3. Yoobee College</div>
-        <div>3. Toi Ohomai Institute of Technology</div>
+      <div class="imgPlusDesc div2" id="div2-2">
+        <div class="image">
+          <img src="../../images/main.webp" alt="Newzealand">
+        </div>
+        <div class="description">
+          <h3>Information Technology</h3>
+          This program focuses on the development, implementation, and management of technology solutions. Students
+          learn about software development, networking, cybersecurity, and IT infrastructure, equipping them for careers
+          in software engineering, system administration, or IT consulting.
+        </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </div>
+  <section id="about" class="introduction">
+    <h2>Universities</h2>
+    <div class="service-cards div1 divUniversitypic">
+      <div class="card box1">
+        <img src="../../images/NZImages/uc9.jpg">
+        <h4>UC International College</h4>
+        <p>UC International College (UCIC) is a pathway institution located in Christchurch, New Zealand, that provides
+          foundation and first-year university transfer programs designed...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/AIEsearch.png">
+        <h4>Aspire2 International, Aspire2 Education</h4>
+        <p>Aspire2 International offers a wide range of practical, career-focused programs for international students in
+          New Zealand. With campuses in Auckland, Christchurch, and Tauranga...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/Auckland-University-of-Technology.jpg">
+        <h4>Auckland University of Technology</h4>
+        <p>Auckland University of Technology (AUT) is a leading New Zealand university, known for its innovation,
+          research excellence, and focus on preparing students for the future...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/university-of-aukhland.jpg">
+        <h4>The University of Auckland</h4>
+        <p>The University of Auckland is New Zealand’s top-ranked university, offering world-class education and
+          research opportunities. Located in the heart of Auckland, it provides a vibrant campus life...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/victoria-university-of-wellington.jpeg">
+        <h4>Victoria University of Wellington</h4>
+        <p>Victoria University of Wellington is a research-led university in New Zealand's capital city. Known for its
+          strengths in humanities, law, and sciences, the university offers...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/SAE-Institute.jpg">
+        <h4>SAE Institute Auckland</h4>
+        <p>SAE Institute Auckland specializes in creative media education, offering programs in audio, film, animation,
+          and gaming. With a focus on hands-on learning and industry-standard...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/Yoobee.jpg">
+        <h4>Yoobee College</h4>
+        <p>Yoobee College is New Zealand’s largest specialist provider of creative and digital technology education.
+          Offering practical courses in design, animation...</p>
+      </div>
+      <div class="card box1">
+        <img src="../../images/NZImages/Toi-Ohomai-Institute-Of-Technology.png">
+        <h4>Toi Ohomai Institute of Technology</h4>
+        <p>Toi Ohomai Institute of Technology is one of New Zealand’s largest tertiary education providers, offering a
+          wide range of programs in applied trades, health, business, and more...</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Email: support@squarelearn.com | Phone: +977 9843310061, 9861885316,
+      9841951005
+    </p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      &copy; 2024 SquareLearn Educational Consultancy | All Rights Reserved
+    </p>
+  </footer>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>
