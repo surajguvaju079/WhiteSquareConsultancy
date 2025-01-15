@@ -4,9 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USA</title>
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="/images/logo.jpg"
+              alt="SquareLearn Logo"
+              style="border-radius: 100%"
+            />
+          </a>
+        </div>
+        <!-- <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div> -->
+        <div>
+          <h1 style="font-size: 40px">SquareLearn Educational Consultancy</h1>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <section
       id="hero"
       class="hero"
@@ -24,45 +62,102 @@
 
     <section id="about" class="introduction">
       <h2>Why study in the USA?</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>
-          1. Home to top-ranking universities like Harvard, MIT, and Stanford.
-        </div>
-        <div>2. Diverse academic programs and research opportunities.</div>
-        <div>3. Strong focus on innovation and career advancement.</div>
-      </div>
+      <p>
+        Home to top-ranking universities like Harvard, MIT, and Stanford.
+        Diverse academic programs and research opportunities. Strong focus on
+        innovation and career advancement.
+      </p>
     </section>
-    <section id="about" class="introduction">
+    <section id="services" class="services">
       <h2>Our Services for the USA</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>1. Guidance on university and program selection.</div>
-        <div>2. Assistance with standardized tests (SAT, GRE, GMAT).</div>
-        <div>3. Scholarship and financial aid application support.</div>
-        <div>4. Visa application and interview preparation.</div>
+      <div class="service-cards">
+        <div class="card">
+          <p style="font-weight: bold">
+            Guidance on university and program selection.
+          </p>
+        </div>
+        <div class="card">
+          <p style="font-weight: bold">
+            Assistance with standardized tests (SAT, GRE, GMAT).
+          </p>
+        </div>
+        <div class="card">
+          <p style="font-weight: bold">
+            Scholarship and financial aid application support.
+          </p>
+        </div>
+        <div class="card">
+          <p style="font-weight: bold">
+            Visa application and interview preparation.
+          </p>
+        </div>
       </div>
     </section>
-    <section id="about" class="introduction">
+    <section id="destinations" class="destinations">
       <h2>Popular Programs:</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>1.STEM (Science, Technology, Engineering, Mathematics)</div>
-        <div>2. Business Administration</div>
-        <div>3. Data Science and AI</div>
+      <div class="destination-cards">
+        <div class="card">
+          <img src="../../images/stem.jpg" alt="USA" />
+          <h3>STEM<br />(Science, Technology, Engineering, Mathematics)</h3>
+          <!-- <p></p> -->
+        </div>
+
+        <div class="card">
+          <img src="../../images/business.jpg" alt="USA" />
+          <h3>BA<br />(Business Administration)</h3>
+          <!-- <p></p> -->
+        </div>
+        <div class="card">
+          <img src="../../images/datascience.jpg" alt="USA" />
+          <h3>DS and AI<br />(Data Science and Artificial Intelligence)</h3>
+          <!--  <p></p> -->
+        </div>
       </div>
     </section>
     <section id="about" class="introduction">
       <h2>Universities</h2>
-      <div class="list" style="text-align: left; padding-left: 400px">
-        <div>1.Wichita State University</div>
-        <div>2. Humboldt University</div>
-        <div>3. Calfornia State University Bakersfield</div>
-        <div>3. University of St. Thomas</div>
-        <div>3. University of Nebraska Lincoln</div>
-        <div>3. Westcliff University</div>
-        <div>3. Manhattanville University</div>
-        <div>3. Colorado Mesa University</div>
-        <div>3. Chadron State College</div>
-        <div>3. The University of Tampa</div>
+      <div class="list service-cards" style="text-align: left">
+        <div class="card"><h3>Wichita State University</h3></div>
+        <div class="card"><h3>Humboldt University</h3></div>
+        <div class="card"><h3>Calfornia State University Bakersfield</h3></div>
+        <div class="card"><h3>University of St. Thomas</h3></div>
+        <div class="card"><h3>University of Nebraska Lincoln</h3></div>
+        <div class="card"><h3>Westcliff University</h3></div>
+        <div class="card"><h3>Manhattanville University</h3></div>
+        <div class="card"><h3>Colorado Mesa University</h3></div>
+        <div class="card"><h3>Chadron State College</h3></div>
+        <div class="card"><h3>The University of Tampa</h3></div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <!-- <p>
+        Email: support@squarelearn.com | Phone: +977 9843310061, 9861885316,
+        9841951005
+      </p> -->
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <p>
+        Email: support@squarelearn.com | Phone: +977 9843310061, 9861885316,
+        9841951005
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+    <script src="../js/copyright.js"></script>
   </body>
 </html>
