@@ -31,16 +31,16 @@ body {
   height: 70px;
 }
 
-.top-header .social-icons a {
+/* .top-header .social-icons a {
   margin-left: 15px;
   color: #fff;
   font-size: 1.2rem;
   transition: transform 0.3s ease;
-}
+}*/
 
-.top-header .social-icons a:hover {
+/* .top-header .social-icons a:hover {
   transform: scale(1.2);
-}
+} */
 
 nav {
   background: #234567;
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: green;
+  color: blue;
 }
 
 /* Hero Section */
@@ -314,36 +314,49 @@ nav ul li a:hover {
 .faq-container {
   width: 80%;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: white;
+  color: #333;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.faq-container h1 {
+  padding: 0 10em;
+  font-size: 25px;
+  font-weight: bold;
 }
 .faq-item {
   margin-bottom: 20px;
   padding: 15px;
   border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.155);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item:last-child {
   border-bottom: none;
 }
-/* .faq-question {
-  ;
+.faq-question {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  color: #333;
 }
- */
+.more {
+  font-size: 24px;
+  cursor: pointer;
+}
+*/
 /* FAQ Question Styles */
 .faq-question h2 {
   padding-left: 10px;
-  font-size: 1.6em;
-  color: #fff;
+  font-size: 1em;
+  color: black;
   cursor: pointer;
   transition: color 0.3s ease;
   margin: 0;
-  background-color: #333;
+  background-color: #666;
   border-radius: 10%;
 }
 
@@ -355,17 +368,18 @@ nav ul li a:hover {
 .faq-answer {
   display: none; /* Hide answers by default */
   padding-left: 20px;
-  font-size: 1.6em;
+  font-size: 1.3em;
   color: #fff;
   margin-top: 10px;
   border-radius: 10%;
-  background-color: green;
+  /* background-color: green; */
+  color: #666;
 }
 
 /* Show the answer when hovering over the question */
-.faq-item:hover .faq-answer {
+/* .faq-item:hover .faq-answer {
   display: block;
-}
+} */
 
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -381,4 +395,9 @@ nav ul li a:hover {
   .faq-question h2 {
     font-size: 1.4em;
   }
+}
+
+i {
+  color: white;
+  margin-right: 10px;
 }
