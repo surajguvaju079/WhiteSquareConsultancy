@@ -23,7 +23,8 @@ body {
   padding: 10px 30px;
   /* background-color: #0056b3; */
   background-color: #fff;
-  color: #000;
+  /* color: #000; */
+  color: rgb(9, 9, 57);
   font-family: "Roboto", serif;
 }
 
@@ -51,6 +52,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 20px;
 }
@@ -65,6 +67,36 @@ nav ul li a {
 
 nav ul li a:hover {
   color: blue;
+}
+
+.nav-mobile {
+  background: #234567;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+.nav-mobile ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav-mobile li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-mobile li a:hover {
+  color: blue;
+}
+.open-menu {
+  display: flex;
+  flex-flow: column;
+}
+.open-menu {
+  flex-flow: row;
 }
 
 /* Hero Section */
@@ -321,7 +353,7 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .faq-container h1 {
-  padding: 0 10em;
+  /* padding: 0 em; */
   font-size: 25px;
   font-weight: bold;
 }
@@ -395,9 +427,55 @@ nav ul li a:hover {
   .faq-question h2 {
     font-size: 1.4em;
   }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .top-header {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    align-items: center;
+    padding: 5px 5px;
+    /* background-color: #0056b3; */
+    background-color: #fff;
+    /* color: #000; */
+    color: rgb(9, 9, 57);
+    font-family: "Roboto", serif;
+  }
+
+  .top-header .logo img {
+    height: 50px;
+  }
+
+  .logo {
+    padding-left: 0px;
+  }
+  .top-header div h1 {
+    font-size: 0.5em;
+  }
 }
 
 i {
   color: white;
   margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
 }

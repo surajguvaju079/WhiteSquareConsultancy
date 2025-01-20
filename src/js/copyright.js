@@ -20,6 +20,8 @@ function moreOption(data) {
       }
     } else {
       element.style.display = "none";
+
+      more[index].innerHTML = "+";
     }
   });
 }
