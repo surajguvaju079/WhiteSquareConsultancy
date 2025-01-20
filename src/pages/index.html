@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>SquareLearn Educational Consultancy</title>
+    <title>SquareLearn Consultancy</title>
     <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href=
@@ -13,17 +13,19 @@
   <body>
     <!-- Header Section -->
     <header>
-      <div class="top-header">
+      <div class="top-header" style="overflow-x: hidden;">
         <div class="logo" style="padding-left: 30px;" >
           <img src="/images/logo.jpg" alt="SquareLearn Logo" style="border-radius: 100%;" />
         </div>
+        
         <!-- <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div> -->
-        <div ><h1 style="font-size: 40px;">SquareLearn Educational Consultancy</h1></div>
+        <div ><h1 style="font-size: 35px;">SquareLearn Consultancy</h1></div>
+        <div class= "menu-icon" onClick="openNavbar()" style="cursor: pointer; "><i class="fa-solid fa-bars"  style="color: black;font-size: 30px;"></i></div>
       </div>
       <nav>
         <ul class="nav-links">
@@ -35,6 +37,16 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-mobile">
+        <ul class="nav-link">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- Hero Section -->
@@ -236,6 +248,7 @@
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </footer>
+    <script src="../js/navbar.js"></script>
     <script src="../js/copyright.js">
 
     </script>
