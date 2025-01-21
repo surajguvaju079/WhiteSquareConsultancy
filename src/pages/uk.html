@@ -24,8 +24,9 @@
           </a>
         </div>
         <div>
-          <h1 style="font-size: 40px">SquareLearn Educational Consultancy</h1>
+          <h1 style="font-size: 40px">SquareLearn Consultancy</h1>
         </div>
+        <div class= "menu-icon" onClick="openNavbar()" style="cursor: pointer; "><i class="fa-solid fa-bars"  style="color: black;font-size: 30px;"></i></div>
         <!-- <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -43,6 +44,16 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-mobile">
+        <ul class="nav-link">
+          <a href="#hero" onclick="closeNavbar()"><li>Home</li></a>
+          <a href="#about" onclick="closeNavbar()"><li>About Us</li></a>
+          <a href="#services" onclick="closeNavbar()"><li>Services</li></a>
+          <a href="#destinations" onclick="closeNavbar()"><li>Destinations</li></a>
+          <a href="#testimonials" onclick="closeNavbar()"><li>Testimonials</li></a>
+          <a href="#contact" onclick="closeNavbar()"><li>Contact</li></a></li>
+        </ul>
+      </div>
     </header>
 
     <section
@@ -161,5 +172,6 @@
       </div>
     </footer>
     <script src="../js/copyright.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

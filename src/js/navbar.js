@@ -13,3 +13,12 @@ function openNavbar() {
     console.error("Element with class 'nav-links' not found");
   }
 }
+
+function closeNavbar() {
+  const navLinks = document.querySelector(".nav-mobile");
+  if (navLinks) {
+    navLinks.style.display = "none";
+  } else {
+    console.error("Element with class nav-links not found");
+  }
+}
