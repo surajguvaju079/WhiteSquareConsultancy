@@ -13,8 +13,6 @@ function openNavbar() {
     console.error("Element with class 'nav-links' not found");
   }
 }
-<<<<<<< HEAD
-=======
 
 function closeNavbar() {
   const navLinks = document.querySelector(".nav-mobile");
@@ -24,4 +22,3 @@ function closeNavbar() {
     console.error("Element with class nav-links not found");
   }
 }
->>>>>>> suraj
