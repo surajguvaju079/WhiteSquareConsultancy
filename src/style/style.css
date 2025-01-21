@@ -18,9 +18,9 @@ body {
 .top-header {
   display: flex;
   /* justify-content: space-between; */
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 10px;
   /* background-color: #0056b3; */
   background-color: #fff;
   /* color: #000; */

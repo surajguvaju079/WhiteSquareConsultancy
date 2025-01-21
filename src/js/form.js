@@ -1,23 +1,67 @@
-document.querySelector("form").addEventListener("submit", function (event) {
+function submitForm(event) {
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+  const email = document.getElementById("email").value;
+  console.log("Form submitted!");
   event.preventDefault();
-  const formData = new FormData(this);
-  const data = {
-    name: formData.get("name"),
-    email: formData.get("email"),
-    message: formData.get("message"),
+  var templateParams = {
+    name: name,
+    message: message,
+    reply_to: email,
   };
-  fetch("https://example.com/send-email", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
+  emailjs.send("service_okpu1qt", "template_m3i8gav", templateParams).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
     },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      alert("Email sent successfully!");
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
+    (error) => {
+      console.log("FAILED...", error);
+    }
+  );
+
+  /* var templateParams = {
+    name: "James",
+    message: "Check this out!",
+  }; */
+}
+
+/* emailjs.init({
+  publicKey: "8VG0KHlM7K-IpQZTw",
+  // Do not allow headless browsers
+  blockHeadless: true,
+  blockList: {
+    // Block the suspended emails
+    list: ["foo@emailjs.com", "bar@emailjs.com"],
+    // The variable contains the email address
+    watchVariable: "userEmail",
+  },
+  limitRate: {
+    // Set the limit rate for the application
+    id: "app",
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
 });
+
+emailjs.send("service_okpu1qt", "template_p46o1wk", templateParams).then(
+  (response) => {
+    console.log("SUCCESS!", response.status, response.text);
+  },
+  (error) => {
+    console.log("FAILED...", error);
+  }
+);
+
+var templateParams = {
+  name: "James",
+  notes: "Check this out!",
+};
+ */
+/* emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "#contact").then(
+  (response) => {
+    console.log("SUCCESS!", response.status, response.text);
+  },
+  (error) => {
+    console.log("FAILED...", error);
+  }
+);
+ */

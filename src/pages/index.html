@@ -174,7 +174,7 @@
           <div class="faq-question">
               <h2>What services do you offer?</h2>
               <!-- <i class="fa-plus"></i> -->
-               <div class="more" data-value="1"   onClick="moreOption(this.dataset.value)">+</div>
+               <div class="more" data-value="1"   onclick="moreOption(this.dataset.value)">+</div>
                <!-- <div class="more minus" data-value="1" style="display: none;" onClick="moreOption(this.dataset.value)">-</div> -->
           </div>
           <div class="faq-answer" data-value="1">
@@ -227,11 +227,11 @@
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Submit</button>
+      <form onSubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" id="message" rows="5" required></textarea>
+        <button type="submit" onClick class="btn">Submit</button>
       </form>
     </section>
 
@@ -252,6 +252,17 @@
     <script src="../js/copyright.js">
 
     </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "8VG0KHlM7K-IpQZTw",
+  });
+})();
+</script>
+<script src="../js/form.js"></script>
 
   </body>
 </html>
