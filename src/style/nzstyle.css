@@ -1,8 +1,9 @@
 .nzheader, .nzcenter{
-    display: flex;
+    display: grid;
     box-sizing: border-box;
     padding: 0px 10rem;
     justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(560px,1fr));
 }
 .c1{
     margin: 20px 0px 1px 0px;
@@ -41,13 +42,18 @@
 .div1{
     display: grid!important;
     grid-template-rows: 100px 100px 100px!important;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr))!important;
+    grid-template-columns: repeat(auto-fit,minmax(560px,1fr)) !important;
 }
 .div2{
     display: grid;
     grid-template-rows:100px!important;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr))!important;
 }
+@media only screen and (max-width: 580px) {
+    .divuni{
+        display: block !important;
+    }
+  }
 .card{
     cursor: pointer;
 }
