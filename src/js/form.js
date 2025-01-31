@@ -1,7 +1,12 @@
 function submitForm(event) {
+  const button = document.querySelector("form button");
   const name = document.getElementById("name").value;
   const message = document.getElementById("message").value;
   const email = document.getElementById("email").value;
+  if (!name || !message || !email) {
+    button.innerHTML = "Please fill in all fields!";
+    return;
+  }
   console.log("Form submitted!");
   event.preventDefault();
   var templateParams = {
@@ -12,9 +17,11 @@ function submitForm(event) {
   emailjs.send("service_okpu1qt", "template_m3i8gav", templateParams).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
+      button.innerHTML = "Message Sent!";
     },
     (error) => {
       console.log("FAILED...", error);
+      button.innerHTML = "Error!";
     }
   );
 

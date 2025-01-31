@@ -427,11 +427,95 @@ nav ul li a:hover {
   display: block;
 } */
 
+/* Book Consultation */
+
+.book {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  /* padding: 10px */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.book form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 10px;
+  background: rgba(128, 128, 128, 0.416);
+  box-shadow: 4px 4px 1px rgba(112, 134, 155, 0.468);
+}
+.book form label {
+  width: 100%;
+}
+.book form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+}
+.book form input:focus {
+  outline: none;
+}
+
+.book form textarea {
+  font: 1em;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.book form button {
+  background: blue;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font: bold;
+  width: 100%;
+}
+.book form button:hover {
+  background: #0056b3;
+}
+
+.book h2 {
+  color: blue;
+  font-size: 2em;
+}
+
+.back {
+  background-color: rgba(128, 128, 128, 0.233);
+  color: red;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.back:hover {
+  background-color: gray;
+}
+
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
   .faq-container {
     width: 95%;
     padding: 20px;
+  }
+  .book form {
+    width: 80%;
+  }
+  .book h2 {
+    font-size: 1.5em;
   }
 
   h1 {
